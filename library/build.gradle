@@ -5,10 +5,10 @@ group = GROUP
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 9
+        minSdkVersion 14
+        targetSdkVersion 28
     }
 
     lintOptions {
@@ -17,7 +17,7 @@ android {
 }
 
 dependencies {
-    compile 'com.pnikosis:materialish-progress:1.0'
+    implementation 'com.pnikosis:materialish-progress:1.0'
 }
 
 apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
